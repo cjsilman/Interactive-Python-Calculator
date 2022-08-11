@@ -192,7 +192,7 @@ class Calculator(QWidget):
         self.sizeCheck()
 
     def backspace(self):
-        #Simple removes the last character added to the queue and updates the screen
+        #Simply removes the last character added to the queue and updates the screen
         if len(self.expression_deque) != 0:
             self.display.setText(self.display.text()[:-1])
             read_value = self.expression_deque.pop()
